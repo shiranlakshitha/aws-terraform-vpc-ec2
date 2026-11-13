@@ -1,0 +1,90 @@
+# ==============================================================================
+# Terraform
+# ==============================================================================
+
+# Compiled files / Local directory
+**/.terraform/*
+
+# .tfstate files (contain sensitive infrastructure state and secrets)
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Exclude all .tfvars files as they are likely to contain sensitive data (e.g. passwords, tokens)
+*.tfvars
+*.tfvars.json
+
+# Ignore override files as they are typically used for local customizations
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# Terraform lock file
+# Note: Keep commented out if you want to commit provider dependency locks (recommended for teams)
+# .terraform.lock.hcl
+
+# ==============================================================================
+# AWS & Credentials / Secrets
+# ==============================================================================
+
+.aws/
+credentials
+*.pem
+*.key
+*.pub
+*.pfx
+*.p12
+
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+
+# ==============================================================================
+# Packaging & Build Artifacts (e.g., AWS Lambda zips)
+# ==============================================================================
+
+*.zip
+*.tar.gz
+dist/
+build/
+
+# ==============================================================================
+# Operating System & Editor Files
+# ==============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Editors & IDEs
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
